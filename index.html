@@ -14,24 +14,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <!-- Meta Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '740022725142888');
-  fbq('track', 'PageView');
-</script>
-<noscript>
-  <img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=740022725142888&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
+
+    <!-- COLA O PIXEL AQUI 👇 -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '740022725142888');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=740022725142888&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- FIM DO PIXEL -->
+
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -60,19 +62,31 @@
             transform: translateY(-10px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.4);
         }
+        .testimonial-card {
+            backdrop-filter: blur(10px);
+            background-color: rgba(31, 41, 55, 0.5); /* bg-gray-800 with opacity */
+        }
+        #timer span {
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
     </style>
 </head>
 <body class="text-white">
 
     <section class="container mx-auto px-4 py-20 text-center" style="background-image: url(https://i.pinimg.com/736x/19/29/74/19297422b750e73c0cc95b620350f0ac.jpg); background-size: cover; background-position: center; background-blend-mode: overlay; background-color: rgba(17, 24, 39, 0.8);">
         <div data-aos="fade-down" data-aos-duration="1000">
-            <h1 class="text-4xl md:text-6xl font-black font-title uppercase tracking-wider gradient-text">Cansado de ser ignorado?</h1>
+            <h1 class="text-4xl md:text-6xl font-black font-title uppercase tracking-wider gradient-text">Cansado de ficar sem assuntos?</h1>
             <p class="mt-4 text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Descubra o segredo para ter conversas que fascinam, conectam e transformam você no homem mais interessante do ambiente.</p>
         </div>
         
         <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
-            <a href="#oferta" class="cta-button mt-8 inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-10 rounded-full text-xl uppercase transition duration-300 ease-in-out transform hover:scale-105">
-                QUERO MINHA TRANSFORMAÇÃO!
+            <a href="https://pay.hotmart.com/W79769827A" target="_blank" class="cta-button mt-8 inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-10 rounded-full text-xl uppercase transition duration-300 ease-in-out transform hover:scale-105">
+                QUERO MEU ACESSO IMEDIATO!
             </a>
             <p class="mt-2 text-sm text-gray-400">Resultados ou seu dinheiro de volta. O risco é todo nosso.</p>
         </div>
@@ -138,50 +152,117 @@
             </div>
         </div>
     </section>
-    
+
     <section class="py-20 bg-gray-900">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center font-title" data-aos="fade-down" data-aos-duration="1000">O que os Faixas Pretas estão dizendo...</h2>
             <div class="w-24 h-1 bg-yellow-400 mx-auto mt-2 mb-12"></div>
+
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700" data-aos="fade-right" data-aos-duration="1200">
-                    <p class="text-gray-300">"Eu sempre fui o 'cara legal' que ficava travado. Depois de aplicar a técnica dos ganchos do ebook, conversei por uma hora sem parar com uma garota na festa. O jogo virou completamente."</p>
-                    <div class="mt-4 font-bold text-yellow-400">- Ricardo Moreira</div>
+                <div class="testimonial-card p-6 rounded-lg border border-gray-700" data-aos="fade-right" data-aos-duration="1200">
+                    <p class="text-gray-300">"Eu era o rei do 'oi, tudo bem?'. Não passava disso. Depois do Papo Faixa Preta, eu conversei por 2 horas com uma garota que achei que nunca teria chance. Estamos saindo há um mês. Mudou meu jogo completamente."</p>
+                    <div class="mt-4 font-bold text-yellow-400">- Ricardo M.</div>
                 </div>
-                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
-                    <p class="text-gray-300">"Pensava que meu problema era só timidez, mas era falta de técnica. O capítulo sobre linguagem corporal mudou minha postura e as pessoas começaram a me notar mais. Incrível."</p>
-                    <div class="mt-4 font-bold text-yellow-400">- Bruno Luz</div>
+                <div class="testimonial-card p-6 rounded-lg border border-gray-700" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                    <p class="text-gray-300">"Sempre achei que precisava ser rico ou bonito. A verdade é que eu só precisava ser interessante. Esse ebook me deu as ferramentas e, mais importante, a confiança. Consegui uma promoção depois de aplicar as técnicas com meu chefe."</p>
+                    <div class="mt-4 font-bold text-yellow-400">- Bruno A.</div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <section id="oferta" class="py-20">
+
+     <section class="py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold font-title mb-4" data-aos="fade-up" data-aos-duration="1000">Veja a Técnica de Ramificação em Ação</h2>
+            <p class="max-w-2xl mx-auto mb-12 text-gray-300" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Não se trata de decorar falas, mas de criar pontes. Veja como um simples tema se transforma em uma conversa profunda.</p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 benefit-card" data-aos="fade-up" data-aos-duration="1000">
+                    <h3 class="font-bold text-2xl text-yellow-400 text-center font-title">VIAGEM</h3>
+                    <div class="mt-4 text-left">
+                        <h4 class="font-semibold text-white">Palavras Associadas:</h4>
+                        <p class="text-gray-300">Aventura, Cultura, Relaxar</p>
+                    </div>
+                    <div class="mt-4 text-left">
+                        <h4 class="font-semibold text-white">Perguntas (Sempre acrescentar um comentário particular):</h4>
+                        <ul class="list-disc list-inside mt-2 text-gray-300 space-y-2">
+                            <li>Qual foi a viagem mais fora da sua zona de conforto? E valeu a pena, gostou? </li>
+                            <li>Qual foi a viagem que mudou sua vida e por quê? </li>
+                            <li>Se você pudesse ir para qualquer lugar do mundo agora, para onde iria e o que faria lá? </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 benefit-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <h3 class="font-bold text-2xl text-yellow-400 text-center font-title">SÉRIE</h3>
+                    <div class="mt-4 text-left">
+                        <h4 class="font-semibold text-white">Palavras Associadas:</h4>
+                        <p class="text-gray-300">Maratona, Personagem, Final</p>
+                    </div>
+                    <div class="mt-4 text-left">
+                        <h4 class="font-semibold text-white">Perguntas (Sempre acrescentar um comentário particular):</h4>
+                        <ul class="list-disc list-inside mt-2 text-gray-300 space-y-2">
+                            <li>Qual é a série que todo mundo gosta, menos você? </li>
+                            <li>Já teve uma série que você começou “só pra ver um episódio” e virou madrugada? </li>
+                            <li>Qual final de série ainda te dá raiva só de lembrar? </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 benefit-card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <h3 class="font-bold text-2xl text-yellow-400 text-center font-title">CULINÁRIA</h3>
+                    <div class="mt-4 text-left">
+                        <h4 class="font-semibold text-white">Palavras Associadas:</h4>
+                        <p class="text-gray-300">Sabor, Experiência, Chef</p>
+                    </div>
+                    <div class="mt-4 text-left">
+                        <h4 class="font-semibold text-white">Perguntas (Sempre acrescentar um comentário particular):</h4>
+                        <ul class="list-disc list-inside mt-2 text-gray-300 space-y-2">
+                            <li>Qual era o seu prato favorito quando criança? </li>
+                            <li>Você gosta de experimentar novos sabores ou prefere comer sempre a mesma coisa? </li>
+                            <li>Se pudesse escolher um chef famoso para um jantar, quem seria e qual o menu? </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="pricing" class="py-20 bg-gray-900">
         <div class="container mx-auto px-4 text-center">
             <div data-aos="zoom-out" data-aos-duration="1000">
-                <h2 class="text-3xl md:text-5xl font-black font-title uppercase text-yellow-400">Sua Transformação Começa Hoje</h2>
-                <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-300">Você não recebe apenas um ebook. Você recebe um arsenal completo para dominar a arte da conversa.</p>
+                <h2 class="text-3xl md:text-5xl font-black font-title uppercase gradient-text">Sua transformação começa hoje.</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-300">Por menos que um lanche, você terá acesso vitalício a um conhecimento que transformará sua vida social, profissional e amorosa para sempre.</p>
             </div>
+
             <div class="mt-12 bg-gray-800 p-8 rounded-xl max-w-lg mx-auto border-2 border-yellow-400 shadow-2xl" data-aos="fade-up" data-aos-duration="1200">
-                <h3 class="font-bold text-2xl font-title text-white">Aqui está tudo o que você recebe hoje:</h3>
-                <div class="text-left mt-6 space-y-4">
-                    <p class="text-lg"><span class="font-bold text-white">✅ Ebook Principal "Papo Faixa Preta":</span> O guia completo com o método passo a passo para se tornar inesquecível. (Valor: R$37,90)</p>
-                    <p class="text-lg"><span class="font-bold text-green-400">🎁 BÔNUS GRÁTIS: Checklist da Conversa Magnética:</span> Seu guia de bolso para consultar antes de qualquer situação social e nunca mais travar. (Valor: R$27,00)</p>
+                <h3 class="font-bold text-2xl font-title">Papo Faixa Preta - Acesso Completo</h3>
+                <p class="text-gray-400 line-through text-2xl mt-4">De R$ 97,90</p>
+                <p class="text-5xl font-black text-yellow-400 mt-2">Por apenas R$ 37,90</p>
+                <p class="text-gray-300 mt-1">ou 4x de R$ 10,14</p>
+
+                <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <a href="https://pay.hotmart.com/W79769827A" target="_blank" class="cta-button mt-8 inline-block w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-10 rounded-full text-xl uppercase transition duration-300 ease-in-out transform hover:scale-105">
+                        EU QUERO SER UM FAIXA PRETA!
+                    </a>
                 </div>
-                <div class="mt-8 bg-gray-900 p-4 rounded-lg">
-                    <p class="text-gray-400 text-lg">Valor total: <span class="line-through">R$64,90</span></p>
-                    <p class="text-4xl md:text-5xl font-black text-yellow-400 mt-2">Por apenas: R$37,90</p>
-                     <p class="text-gray-300 mt-1">ou 4x de R$ 10,14</p>
+                 <div class="mt-8 text-left text-gray-300 space-y-2" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <p>✓ Acesso imediato e vitalício ao Ebook</p>
+                    <p>✓ Técnicas práticas e aplicáveis</p>
+                    <p>✓ Bônus: Guia de Linguagem Corporal</p>
+                    <p>✓ Garantia de 7 dias</p>
                 </div>
-                 <a href="https://pay.hotmart.com/W79769827A" target="_blank" class="cta-button mt-8 inline-block w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-10 rounded-full text-xl uppercase transition duration-300 ease-in-out transform hover:scale-105">
-                    QUERO MEU ACESSO COM BÔNUS!
-                </a>
-                 <p class="mt-4 text-sm text-gray-400">Garantia de 7 dias. Seu risco é zero.</p>
+            </div>
+
+            <div class="mt-12" data-aos="zoom-in" data-aos-duration="1000">
+                 <h3 class="text-2xl font-bold text-red-500 uppercase">Atenção! Esta oferta expira em:</h3>
+                 <div id="timer" class="text-4xl font-mono font-bold mt-2 text-yellow-400" data-aos="flip-up" data-aos-delay="200" data-aos-duration="1000">
+                     <span id="hours">12</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                 </div>
             </div>
         </div>
     </section>
-    
-    <section class="py-20 bg-gray-900">
+
+    <section class="py-20">
         <div class="container mx-auto px-4 max-w-4xl">
             <h2 class="text-3xl md:text-4xl font-bold text-center font-title mb-12" data-aos="fade-down" data-aos-duration="1000">Dúvidas Frequentes</h2>
 
@@ -228,6 +309,33 @@
         AOS.init({
             once: true, // whether animation should happen only once - while scrolling down
         });
+
+        // Countdown Timer
+        function startTimer(duration) {
+            let timer = duration, hours, minutes, seconds;
+            setInterval(function () {
+                hours = parseInt(timer / 3600, 10);
+                minutes = parseInt((timer % 3600) / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                document.getElementById("hours").textContent = hours;
+                document.getElementById("minutes").textContent = minutes;
+                document.getElementById("seconds").textContent = seconds;
+
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            let twelveHours = 12 * 60 * 60;
+            startTimer(twelveHours);
+        };
 
         // FAQ Toggle
         function toggleFAQ(element) {
